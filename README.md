@@ -2,7 +2,7 @@ Yocto Recipe to install FBTFT driver for Intel Galileo (gen1 and gen2)
 ======================================================================
 
 This recipe will install fbtft driver (Commit #71994224c5ed951eab7ca9da2c919456d1632d15) with patch to disable dma.
-fbtft driver source can be downloaded from https://github.com/notro/fbtft.
+Full fbtft driver source can be downloaded from https://github.com/notro/fbtft.
 
 *The usage below is specific to Intel Galileo Gen 1 and Gen 2 only*
 
@@ -10,7 +10,7 @@ Usage:
 ======
 
 1. Copy the contents in the "recipe/*" folder to */meta-clanton_vX.Y.Z/meta-clanton-distro/recipes-kernel/*.
-2. Append the line **IMAGE_INSTALL += "fbtft-driver"** to the file below
+2. Append the line **IMAGE_INSTALL += "fbtft-driver"** to the files listed below:
 ```
 /meta-clanton_vX.Y.Z/meta-clanton-distro/recipes-core/images/image-full.bb
 /meta-clanton_vX.Y.Z/meta-clanton-distro/recipes-core/images/image-spi.bb
