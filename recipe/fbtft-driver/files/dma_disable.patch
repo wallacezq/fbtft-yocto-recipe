@@ -1,0 +1,12 @@
+--- a/fbtft-core.c	2014-07-12 17:51:10.009243697 +0800
++++ b/fbtft-core.c	2014-07-12 17:58:42.077247745 +0800
+@@ -50,7 +50,8 @@
+ module_param(debug, ulong , 0);
+ MODULE_PARM_DESC(debug, "override device debug level");
+ 
+-static bool dma = true;
++//static bool dma = true;
++static bool dma = false;
+ module_param(dma, bool, 0);
+ MODULE_PARM_DESC(dma, "Use DMA buffer");
+ 
