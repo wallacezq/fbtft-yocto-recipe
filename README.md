@@ -19,7 +19,7 @@ Usage:
 ```code
 ~$ bitbake fbtft-driver -c build
 ```
-3. Rebuild the rootfs:
+3. Rebuild the rootfs and transfer the image into the SDCard:
 ```code
 ~$ bitbake image-spi #for spi image
 or
@@ -66,7 +66,7 @@ echo -n "0" > /sys/class/gpio/gpio7/value
 Loading the Kernel Module from Yocto Shell:
 ===========================================
 
-1. Perform the following steps in the priviledged shell:
+1. Execute the following shell commands in the shell to load fbtft driver:
 ```
 ~# modprobe fbtft_device custom name=fb_ili9341 buswidth=8 gpios=dc:6 width=320 height=240 busnum=1 bgr=1 speed=4000000
 ~# modprobe fb_ili9341
