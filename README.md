@@ -6,6 +6,17 @@ Full fbtft driver source can be downloaded from https://github.com/notro/fbtft.
 
 *The usage below is specific to Intel Galileo Gen 1 and Gen 2 only*
 
+Pre-requisite
+=============
+
+Please ensure the yocto kernel has the following config options enabled before proceed:
+* FB_SYS_FILLRECT
+* FB_SYS_COPYAREA
+* FB_SYS_IMAGEBLIT
+* FB_SYS_FOPS
+* FB_DEFERRED_IO
+* FB_BACKLIGHT
+
 Usage:
 ======
 
