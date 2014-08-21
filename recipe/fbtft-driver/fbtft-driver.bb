@@ -7,10 +7,6 @@ RDEPENDS_fbtft = "kernel (${KERNEL_VERSION})"
 DEPENDS = "virtual/kernel"
 PR = "r0"
 
-#SRC_URI = "https://github.com/robopeak/rpusbdisp.git"
-#SRC_URI = "https://github.com/robopeak/rpusbdisp/archive/master.zip"
-#SRC_URI = "https://github.com/notro/fbtft/archive/master.zip \
-#	   file://dma_disable.patch"
 
 SRCREV = "71994224c5ed951eab7ca9da2c919456d1632d15"
 SRC_URI = "git://github.com/notro/fbtft.git;protocol=http \
