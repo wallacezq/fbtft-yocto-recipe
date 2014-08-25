@@ -79,7 +79,7 @@ Loading the Kernel Module from Yocto Shell:
 
 1. Execute the following shell commands in the shell to load fbtft driver:
 ```
-~# modprobe fbtft_device custom name=fb_ili9341 buswidth=8 gpios=dc:6 width=320 height=240 busnum=1 bgr=1 speed=4000000
+~# modprobe fbtft_device custom name=fb_ili9341 buswidth=8 gpios=dc:6 width=240 height=320 busnum=1 bgr=1 speed=5000000
 ~# modprobe fb_ili9341
 ```
 2. Verify that /dev/fb0 exists and execute "cat /dev/urandom > /dev/fb0" in the priviledged shell.
