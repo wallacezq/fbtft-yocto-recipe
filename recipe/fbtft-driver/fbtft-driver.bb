@@ -14,7 +14,8 @@ PR = "r0"
 
 SRCREV = "71994224c5ed951eab7ca9da2c919456d1632d15"
 SRC_URI = "git://github.com/notro/fbtft.git;protocol=http \
-	   file://dma_disable.patch"
+	   file://dma_disable.patch \
+	   file://cansleep.patch"
 
 S="${WORKDIR}/git/"
 
